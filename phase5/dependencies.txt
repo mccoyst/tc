@@ -1,0 +1,99 @@
+AAccess.o: AAccess.cpp AAccess.h Binary.h Expr.h Node.h Type.h Ident.h \
+  Deref.h Unary.h
+Add.o: Add.cpp Add.h Binary.h Expr.h Node.h Type.h Ident.h IntLit.h
+Ass.o: Ass.cpp Ass.h Binary.h Expr.h Node.h Type.h Ident.h Deref.h \
+  Unary.h FAccess.h AAccess.h
+Binary.o: Binary.cpp Binary.h Expr.h Node.h Type.h Ident.h IntLit.h
+Block.o: Block.cpp Block.h Stat.h Node.h utility.h
+Break.o: Break.cpp Break.h Stat.h Node.h While.h Control.h Expr.h Type.h \
+  Ident.h
+CastA.o: CastA.cpp CastA.h Expr.h Node.h Type.h Ident.h
+Cast.o: Cast.cpp Cast.h Expr.h Node.h Type.h Ident.h Var.h
+CDecl.o: CDecl.cpp CDecl.h Node.h CBDecl.h Type.h Ident.h FDecl.h VDecl.h \
+  SymTab.h
+CInvoke.o: CInvoke.cpp CInvoke.h Stat.h Node.h Expr.h Type.h Ident.h \
+  Ctor.h CBDecl.h Block.h Param.h Function.h
+Continue.o: Continue.cpp Continue.h Stat.h Node.h While.h Control.h \
+  Expr.h Type.h Ident.h
+Control.o: Control.cpp Control.h Expr.h Node.h Type.h Ident.h Stat.h \
+  IntLit.h
+Ctor.o: Ctor.cpp Ctor.h CBDecl.h Node.h Type.h Ident.h Block.h Stat.h \
+  Param.h Function.h Expr.h CInvoke.h
+Del.o: Del.cpp Del.h Expr.h Node.h Type.h Ident.h Stat.h
+Deref.o: Deref.cpp Deref.h Unary.h Expr.h Node.h Type.h Ident.h
+Dest.o: Dest.cpp Dest.h Ident.h CBDecl.h Node.h Type.h Block.h Stat.h \
+  Function.h Expr.h Param.h
+Div.o: Div.cpp Div.h Binary.h Expr.h Node.h Type.h Ident.h IntLit.h
+EmptyDecl.o: EmptyDecl.cpp EmptyDecl.h CBDecl.h Node.h Type.h Ident.h
+EmptyStat.o: EmptyStat.cpp EmptyStat.h Stat.h Node.h
+Equals.o: Equals.cpp Equals.h Binary.h Expr.h Node.h Type.h Ident.h \
+  IntLit.h
+Expr.o: Expr.cpp Expr.h Node.h Type.h Ident.h
+ExprStat.o: ExprStat.cpp ExprStat.h Expr.h Node.h Type.h Ident.h Stat.h
+FAccess.o: FAccess.cpp FAccess.h Expr.h Node.h Type.h Ident.h Deref.h \
+  Unary.h
+FDecl.o: FDecl.cpp FDecl.h CBDecl.h Node.h Type.h Ident.h VDecl.h
+Function.o: Function.cpp Function.h Ident.h Expr.h Node.h Type.h Param.h \
+  Block.h Stat.h
+Greater.o: Greater.cpp Greater.h Binary.h Expr.h Node.h Type.h Ident.h \
+  IntLit.h
+Ident.o: Ident.cpp Ident.h
+IfElse.o: IfElse.cpp IfElse.h Control.h Expr.h Node.h Type.h Ident.h \
+  Stat.h IntLit.h
+IntLit.o: IntLit.cpp tc.h IntLit.h Expr.h Node.h Type.h Ident.h
+keywords.o: keywords.cpp tc.h ast.h Node.h Stat.h Expr.h Type.h Ident.h \
+  Unary.h Binary.h EmptyStat.h ExprStat.h Block.h VDecl.h VDeclStat.h \
+  Var.h Deref.h Out.h Ass.h Equals.h Less.h Greater.h Add.h Sub.h Mul.h \
+  Div.h Neg.h Not.h IntLit.h NullLit.h Control.h IfElse.h While.h \
+  Return.h Break.h Continue.h CBDecl.h CDecl.h FDecl.h EmptyDecl.h Del.h \
+  Cast.h New.h Ctor.h Param.h Function.h FAccess.h Dest.h This.h Super.h \
+  Meth.h MInvoke.h CInvoke.h NewArray.h AAccess.h CastA.h y.tab.h
+Less.o: Less.cpp Less.h Binary.h Expr.h Node.h Type.h Ident.h IntLit.h
+lexdbg.o: lexdbg.cpp tc.h scanner.h
+lexrelease.o: lexrelease.cpp tc.h scanner.h ast.h Node.h Stat.h Expr.h \
+  Type.h Ident.h Unary.h Binary.h EmptyStat.h ExprStat.h Block.h VDecl.h \
+  VDeclStat.h Var.h Deref.h Out.h Ass.h Equals.h Less.h Greater.h Add.h \
+  Sub.h Mul.h Div.h Neg.h Not.h IntLit.h NullLit.h Control.h IfElse.h \
+  While.h Return.h Break.h Continue.h CBDecl.h CDecl.h FDecl.h \
+  EmptyDecl.h Del.h Cast.h New.h Ctor.h Param.h Function.h FAccess.h \
+  Dest.h This.h Super.h Meth.h MInvoke.h CInvoke.h NewArray.h AAccess.h \
+  CastA.h y.tab.h
+Meth.o: Meth.cpp Meth.h CBDecl.h Node.h Type.h Ident.h Param.h Function.h \
+  Expr.h Block.h Stat.h Return.h Control.h Equals.h Binary.h Var.h This.h
+MInvoke.o: MInvoke.cpp MInvoke.h Expr.h Node.h Type.h Ident.h Meth.h \
+  CBDecl.h Param.h Function.h Block.h Stat.h Deref.h Unary.h Super.h
+Mul.o: Mul.cpp Mul.h Binary.h Expr.h Node.h Type.h Ident.h IntLit.h
+Neg.o: Neg.cpp Neg.h Unary.h Expr.h Node.h Type.h Ident.h IntLit.h
+NewArray.o: NewArray.cpp NewArray.h Expr.h Node.h Type.h Ident.h
+New.o: New.cpp New.h Expr.h Node.h Type.h Ident.h Ctor.h CBDecl.h Block.h \
+  Stat.h Param.h Function.h CInvoke.h utility.h
+Node.o: Node.cpp Node.h
+Not.o: Not.cpp Not.h Unary.h Expr.h Node.h Type.h Ident.h IntLit.h
+NullLit.o: NullLit.cpp NullLit.h Expr.h Node.h Type.h Ident.h
+Out.o: Out.cpp Out.h Expr.h Node.h Type.h Ident.h Stat.h
+Param.o: Param.cpp Param.h Node.h Type.h Ident.h
+Return.o: Return.cpp Return.h Control.h Expr.h Node.h Type.h Ident.h \
+  Stat.h Meth.h CBDecl.h Param.h Function.h Block.h
+Sub.o: Sub.cpp Sub.h Binary.h Expr.h Node.h Type.h Ident.h IntLit.h
+Super.o: Super.cpp Super.h Expr.h Node.h Type.h Ident.h
+SymTab.o: SymTab.cpp Type.h Ident.h SymTab.h
+tc.o: tc.cpp tc.h
+This.o: This.cpp This.h Expr.h Node.h Type.h Ident.h
+TypeArray.o: TypeArray.cpp Type.h Ident.h Meth.h CBDecl.h Node.h Param.h \
+  Function.h Expr.h Block.h Stat.h
+Type.o: Type.cpp Type.h Ident.h
+TypeInt.o: TypeInt.cpp Type.h Ident.h
+TypeNull.o: TypeNull.cpp Type.h Ident.h
+TypeObject.o: TypeObject.cpp Type.h Ident.h Ctor.h CBDecl.h Node.h \
+  Block.h Stat.h Param.h Function.h Expr.h Dest.h Meth.h
+TypeUnknown.o: TypeUnknown.cpp Type.h Ident.h
+TypeUser.o: TypeUser.cpp Type.h Ident.h SymTab.h Meth.h CBDecl.h Node.h \
+  Param.h Function.h Expr.h Block.h Stat.h Ctor.h Dest.h CDecl.h
+Unary.o: Unary.cpp Unary.h Expr.h Node.h Type.h Ident.h IntLit.h
+Var.o: Var.cpp Var.h Ident.h Expr.h Node.h Type.h Deref.h Unary.h \
+  SymTab.h Function.h Param.h Block.h Stat.h
+VDecl.o: VDecl.cpp VDecl.h Node.h Ident.h
+VDeclStat.o: VDeclStat.cpp VDeclStat.h Stat.h Node.h Type.h Ident.h \
+  VDecl.h SymTab.h tc.h
+While.o: While.cpp While.h Control.h Expr.h Node.h Type.h Ident.h Stat.h \
+  IntLit.h EmptyStat.h

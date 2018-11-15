@@ -1,0 +1,50 @@
+Steve McCoy
+CS812
+5/2/2008
+
+T Compiler 'tc', Phase 4
+
+This compiler fully supports the subset of the T programming language that includes:
+	- the main block
+	- integer literals, variables, and operations
+	- expression statements
+	- the out statement
+	- if-else, while, break, and continue statements
+	- return of an int expression from main()
+  - Class declarations with fields
+  - Inheritance
+  - Class instance creation
+  - Field access
+  - Pre-defined class Object
+  - Runtime errors related to classes (null reference, bad cast, out of memory)
+  - Destructors and the delete statement
+  - Constructors with and without arguments, constructor overloading, implicit constructor calls
+  - this() and super() constructor invokations
+  - this and super for field access inside of constructors and destructors
+  - methods, arguments to methods, inherited methods, and method overloading
+  - array declarations, creation, access, members, casts, deletion
+This version of the compiler also has enhanced support for:
+	- carriage returns and CRLF as line-endings
+  - Error messages!
+Performance enhancements include:
+  - A pool is now used, so that equivalent identifiers share the same string,
+    rather than waste memory with duplicates
+
+'tc' reads source files from standard input and generates assembly to standard output. Errors and other messages are printed to standard error. The following command-line flags are understood:
+	-before
+		Prints the abstract syntax tree before semantic analysis.
+	-after
+		Prints the abstract syntax tree after semantic analysis.
+  -classes
+    Prints the classes' symbol table (constructors, all methods, non-inherited fields
+    and destructor) after semantic analysis
+	-table
+		Prints the variables' symbol table whenever a new (identifer, type) is added to it.
+	-verbose
+		Prints all of the yacc parsing information.
+	-warnings
+		Prints warnings for constant expressions used as while conditions.
+	-optimize
+		Folds constant expressions and eliminates if-else/while branches
+    controlled by constant expressions.
+
